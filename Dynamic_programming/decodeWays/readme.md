@@ -1,6 +1,6 @@
 # Problem Name: Leetcode #91
 ## Problem explaination
-- url
+- url: [https://leetcode.com/problems/decode-ways/]
 - definition :return the number of ways to decode it
 
 ## Approach
