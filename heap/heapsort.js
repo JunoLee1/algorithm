@@ -2,23 +2,23 @@ function swap(array, index1, index2){
     let tmp = array[index1];
     array[index1] = array[index2];
     array[index2] = tmp;
-}// exchange two elemnent function
+}// swap the two elemnent function
 
 function heapify(array, index, heapSize){
     let largest = index; //current biggest value
-    let leftChild = 2 * index ; // 
-    let rightChild = 2 * index + 1;
+    let leftChild = 2 * index + 1; // 
+    let rightChild = 2 * index + 2;
     
-    if (leftChild < array.length && array[leftChild] > array[largest]){
+    if (leftChild < heapSize && array[leftChild] > array[largest]){
         largest = leftChild;
     }
 
-    if (rightChild < array.length && array[rightChild]> array[largest]){
+    if (rightChild < heapSize && array[rightChild]> array[largest]){
         largest = rightChild;
     }
-    if (largest !== index){ // 
-        swap(array,index, largest);//
-        heapify(array,largest,heapSize);
+    if (largest !== index){ // x match with heap state
+        swap(array,index, largest); // excute swap function
+        heapify(array,largest,heapSize); // re heapify
     }
 }
 
@@ -36,7 +36,7 @@ function heapSort(array){
 }
 let arr = [15, 5, 12, 14, 9, 10, 6, 2, 11, 1];
 
-// 힙 정렬 호출
+// excute heapsort 
 heapSort(arr);
 
 // 결과 출력
