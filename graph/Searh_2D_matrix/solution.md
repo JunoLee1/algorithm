@@ -7,12 +7,15 @@
 ## Apporach:
     DFS => this is because searching target by tracking past path. 
 
+    however this approach is inefficient this is because the matrix is tracked  
+
 
 
 ## comment :
  inside of loop, I should've used return false...
 
- 
+
+
 
 ## code
 ``` js
