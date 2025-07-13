@@ -6,9 +6,18 @@ var partition = function(head, x){
             OutPut ->  partition it such that all nodes less than x come before nodes greater than or equal to x.
 
         * Approaching:
-            - make the two dummy (left one's less then X value, right one's greater or same as X value)
+            1. Create the two dummy head 
+                -left_dummy for < "x"
 
-            - connect right one to left dummy 
+                - right_dummy for >= "x"
+
+            2. traverse the oringinal list
+            
+            3. large_node's next should terminate to prevent including the tail of original list.
+
+            4. connect left tail to right dummy.next
+
+            5 return the whole linked list 
     */
 
 

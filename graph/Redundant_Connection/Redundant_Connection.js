@@ -2,7 +2,7 @@ var findRedundantConnection = function(edges) {
     const n = edges.length
     const parent = Array(n + 1).fill(0).map((_,i) => i)
     // result = [0, 1, 2, 3, 4]
-    // parent = [0, 1, 2, 3, 4]
+    // parent = [0, 1, 2, 3, 4 o]
 
     const find = (x) => {
         if(x !== parent[x]){
